@@ -1,16 +1,8 @@
 package com.kingwanyama.spring_boot_demo_app.customer;
 
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Collections;
-import java.util.List;
 
-public class CustomerRepository implements CustomerRepo{
-    @Override
-    public List<Customer> getCustomers() {
-        // TODO connect to real db
-        return Collections.emptyList();
-    }
+public interface CustomerRepository extends JpaRepository<Customer, Long> {
+
 }
