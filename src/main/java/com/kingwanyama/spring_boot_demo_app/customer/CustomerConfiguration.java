@@ -21,4 +21,6 @@ public class CustomerConfiguration {
         System.out.println("useFakeCustomerRepo = "+useFakeCustomerRepo);
         return new CustomerFakeRepository();
     }
+
+
 }
