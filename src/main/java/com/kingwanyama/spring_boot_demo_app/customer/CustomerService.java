@@ -19,6 +19,7 @@ public class CustomerService {
         this.customerRepository = customerRepository;
     }
 
+
     List<Customer> getCustomers(){
         LOGGER.info("getCustomers was called");
         return customerRepository.findAll();
